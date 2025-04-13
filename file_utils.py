@@ -25,3 +25,6 @@ def is_valid_path(file_path):
         return {"result": True, "message": f"Directory '{directory_path}' exists."}
     else:
         return {"result": False, "message": f"Directory '{directory_path}' does not exists."}
+    
+def is_directory_exists(path):  
+    return os.path.isdir(path)
